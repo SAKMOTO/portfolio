@@ -3,7 +3,8 @@ import { config } from "@/data/config";
 import { Resend } from "resend";
 import { z } from "zod";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Initialize Resend lazily inside the handler to avoid build-time errors
+// when RESEND_API_KEY is not set in the environment.
 
 const Email = z.object({
   fullName: z.string().min(2, "Full name is invalid!"),
@@ -12,6 +13,13 @@ const Email = z.object({
 });
 export async function POST(req: Request) {
   try {
+    if (!process.env.RESEND_API_KEY) {
+      return Response.json(
+        { error: "Email service not configured" },
+        { status: 501 }
+      );
+    }
+    const resend = new Resend(process.env.RESEND_API_KEY);
     const body = await req.json();
     console.log(body);
     const {

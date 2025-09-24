@@ -17,7 +17,16 @@ import { cn } from "@/lib/utils";
 
 const ProjectsSection = () => {
   return (
-    <section id="projects" className="max-w-7xl mx-auto md:h-[130vh]">
+    <section id="projects" className="relative max-w-7xl mx-auto md:h-[130vh]">
+      {/* Blurred gradient background */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 -z-10 blur-3xl"
+        style={{
+          background:
+            "radial-gradient(40% 35% at 20% 20%, rgba(0, 191, 255, 0.12), transparent 60%), radial-gradient(45% 40% at 80% 30%, rgba(255, 0, 128, 0.10), transparent 60%), radial-gradient(50% 45% at 50% 80%, rgba(0, 255, 171, 0.10), transparent 60%)",
+        }}
+      />
       <Link href={"#projects"}>
         <h2
           className={cn(

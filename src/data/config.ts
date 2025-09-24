@@ -1,41 +1,34 @@
 const config = {
-  title: "Naresh Khatri | Full-Stack Developer",
+  title: "Mohammad Harun | CSE Student & Developer",
   description: {
-    long: "Explore the portfolio of Naresh, a full-stack developer and creative technologist specializing in interactive web experiences, 3D animations, and innovative projects. Discover my latest work, including Coding Ducks, The Booking Desk, Ghostchat, and more. Let's build something amazing together!",
-    short:
-      "Discover the portfolio of Naresh, a full-stack developer creating interactive web experiences and innovative projects.",
+    long:
+      "CSE student passionate about AI/ML, custom Android development, and building innovative apps. Experienced in system-level work (ROMs, kernels) and application development (mobile & web).",
+    short: "CSE student | AI/ML Enthusiast | App & Web Developer",
   },
   keywords: [
-    "Naresh",
-    "portfolio",
-    "full-stack developer",
-    "creative technologist",
-    "web development",
-    "3D animations",
-    "interactive websites",
-    "Coding Ducks",
-    "The Booking Desk",
-    "Ghostchat",
-    "web design",
-    "GSAP",
-    "React",
-    "Next.js",
-    "Spline",
-    "Framer Motion",
+    "Mohammad Harun",
+    "CSE",
+    "Developer",
+    "AI",
+    "ML",
+    "Android",
+    "Custom ROMs",
+    "Portfolio",
   ],
-  author: "Naresh Khatri",
-  email: "naresh.khatri2345@gmail.com",
-  site: "https://nareshkhatri.site",
+  author: "Mohammad Harun",
+  email: "youremail@example.com",
+  site: "https://your-portfolio.vercel.app",
 
   get ogImg() {
     return this.site + "/assets/seo/og-image.png";
   },
   social: {
-    twitter: "https://x.com/nothotchaddi",
-    linkedin: "https://www.linkedin.com/in/naresh-khatri/",
-    instagram: "https://www.instagram.com/hotchaddi",
-    facebook: "https://www.facebook.com/HotChaddi/",
-    github: "https://github.com/Naresh-Khatri",
+    github: "https://github.com/YOUR_USERNAME",
+    linkedin: "https://linkedin.com/in/YOUR_PROFILE",
+    twitter: "https://x.com/YOUR_HANDLE",
+    instagram: "https://instagram.com/YOUR_HANDLE",
+    // Optional: keep facebook key empty or remove if unused in UI
+    facebook: "",
   },
 };
 export { config };
