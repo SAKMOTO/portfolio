@@ -1,55 +1,65 @@
-# 🚀 My Portfolio Website
+# 🚀 Mohammed Harun — 3D Portfolio
 
-Welcome to the repository for my personal portfolio website! This is where I showcase my skills, projects, and a bit of my personality through jaw-dropping 3D animations, slick interactions, and fluid motion. If you're into creative web design, you're in the right place.
+Personal portfolio showcasing Android, AI/ML, and full‑stack projects with 3D interactions, smooth animations, and a clean UI.
 
-![Portfolio Preview](https://github.com/Naresh-Khatri/Portfolio/blob/main/public/assets/projects-screenshots/portfolio/landing.png?raw=true)
+## Preview
 
-## 🔥 Features
+![Befast](./public/assets/projects/g1.png)
+![Weather](./public/assets/projects/g2.png)
+![Look Up](./public/assets/projects/g3.png)
 
-- **3D Animations**: Custom-made interactive keyboard using Spline with skills as keycaps that reveal titles and descriptions on hover.
-- **Slick Interactions**: Powered by GSAP and Framer Motion for smooth animations on scroll, hover, and element reveal.
-- **Space Theme**: Particles on a dark background to simulate a cosmic environment, making the experience out of this world.
-- **Responsive Design**: Fully responsive across all devices to ensure the best user experience.
-- **Innovative Web Design**: Combining creativity with functionality to push the boundaries of modern web design.
+## Features
 
-## 🛠️ Tech Stack
+- **3D interactions**: Spline scene with animated keyboard and keycaps
+- **Motion**: GSAP + Framer Motion for smooth reveals and hovers
+- **Responsive**: Looks great on mobile and desktop
+- **Projects grid**: Image modals and descriptions
+- **Contact**: Email via Resend API
 
-- **Frontend**: Next.js, React, Tailwind CSS, Shadcn, Aceternity UI
-- **Animations**: GSAP, Framer Motion, Spline Runtime
-- **Misc**: Resend, Socketio, Zod
+## Tech Stack
 
-## 🚀 Getting Started
+- **Frontend**: Next.js, React, Tailwind CSS, shadcn/ui, Aceternity UI
+- **Animation**: GSAP, Framer Motion, Spline Runtime
+- **Other**: Resend, Socket.io, Zod
+
+## Getting Started
 
 ### Prerequisites
 
-- Node.js (v14+)
-- npm or yarn
+- Node.js 18+
+- npm
 
-### Installation
+### Install & Run
 
-1. Clone the repository:
+```bash
+git clone https://github.com/SAKMOTO/portfolio.git
+cd portfolio
+npm install
+npm run dev
+# open http://localhost:3000
+```
 
-    ```bash
-    git clone https://github.com/Naresh-Khatri/Portfolio.git
-    ```
+## Environment
 
-2. Navigate to the project directory:
+Create `.env.local` and add:
 
-    ```bash
-    cd Portfolio
-    ```
+```bash
+RESEND_API_KEY=your_resend_key
+```
 
-3. Install dependencies:
+The contact form uses `src/app/api/send/route.ts` and sends to the email in `src/data/config.ts`.
 
-    ```bash
-    npm install
-    # or
-    yarn install
-    ```
+## Deploy
 
-4. Run the development server:
+### Vercel (recommended)
+- Import the repo in Vercel
+- Add env var `RESEND_API_KEY`
+- Deploy
 
-    ```bash
+### Netlify
+- Build: `next build`
+- Publish: `.next`
+- Add env var `RESEND_API_KEY`
     npm run dev
     # or
     yarn dev
