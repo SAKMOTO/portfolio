@@ -17,7 +17,7 @@ const STATES = {
   hero: {
     desktop: {
       scale: { x: 0.25, y: 0.25, z: 0.25 },
-      position: { x: 400, y: -200, z: 0 },
+      position: { x: 520, y: -200, z: 0 },
       rotation: { x: 0, y: 0, z: 0 },
     },
     mobile: {

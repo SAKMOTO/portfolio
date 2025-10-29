@@ -237,19 +237,18 @@ export type Project = {
 const projects: Project[] = [
   {
     id: "befast",
-    category: "Android",
-    title: "Befast",
-    src: "/assets/projects/befast-1.png",
-    screenshots: ["befast-1.png", "befast-2.png"],
+    category: "Android App Development",
+    title: "Befast App",
+    src: "/assets/projects/befast_app_ui.jpg",
+    screenshots: ["befast_app_ui.jpg"],
     skills: { frontend: [], backend: [] },
     live: "",
-    github: "https://github.com/YOUR_USERNAME/befast",
+    github: "",
     get content() {
       return (
         <div>
           <TypographyP className="font-mono ">
-            A mobile app with animated splash screen, phone number sign-up with
-            OTP, social logins, and smart notification handling.
+            Befast is a modern Android onboarding app featuring an animated splash screen, OTP-based sign-up, and social logins (Google, Facebook). It handles location and notification permissions seamlessly to enhance the user onboarding experience.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
         </div>
@@ -257,20 +256,19 @@ const projects: Project[] = [
     },
   },
   {
-    id: "lookup",
-    category: "Android / AI",
-    title: "Look Up",
-    src: "/assets/projects/lookup-1.png",
-    screenshots: ["lookup-1.png", "lookup-2.png"],
+    id: "glacial-lake-ai",
+    category: "AI / Machine Learning",
+    title: "Glacial Lake Detection (ISRO Hackathon)",
+    src: "/assets/projects/glacial_lake_detection.jpg",
+    screenshots: ["glacial_lake_detection.jpg"],
     skills: { frontend: [], backend: [] },
     live: "",
-    github: "https://github.com/YOUR_USERNAME/lookup",
+    github: "",
     get content() {
       return (
         <div>
           <TypographyP className="font-mono ">
-            A visual search app like Google Lens using image labeling and Google
-            APIs to scan and search image content.
+            An AI model designed to automatically detect and monitor glacial lakes from satellite imagery. It identifies water bodies and changes over time using image segmentation and classification techniques.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
         </div>
@@ -279,19 +277,18 @@ const projects: Project[] = [
   },
   {
     id: "weatherapp",
-    category: "Android",
+    category: "Android App Development",
     title: "Weather App",
-    src: "/assets/projects/weather-1.png",
-    screenshots: ["weather-1.png", "weather-2.png"],
+    src: "/assets/projects/weather_app_ui.jpg",
+    screenshots: ["weather_app_ui.jpg"],
     skills: { frontend: [], backend: [] },
     live: "",
-    github: "https://github.com/YOUR_USERNAME/weatherapp",
+    github: "",
     get content() {
       return (
         <div>
           <TypographyP className="font-mono ">
-            Clean weather app (Java + XML) using OpenWeatherMap API with
-            animated GIF backgrounds and modern UI.
+            A clean and intuitive weather application that fetches real-time data using the OpenWeatherMap API. It displays temperature, humidity, and conditions with animated GIF backgrounds that match current weather states.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
         </div>
@@ -299,20 +296,19 @@ const projects: Project[] = [
     },
   },
   {
-    id: "aditya-learn",
-    category: "Android",
-    title: "Aditya Learn App",
-    src: "/assets/projects/aditya-1.png",
-    screenshots: ["aditya-1.png", "aditya-2.png"],
+    id: "lookup",
+    category: "AI + Android App",
+    title: "Look Up (Visual Search App)",
+    src: "/assets/projects/lookup_app_ui.jpg",
+    screenshots: ["lookup_app_ui.jpg"],
     skills: { frontend: [], backend: [] },
     live: "",
-    github: "https://github.com/YOUR_USERNAME/aditya-learn",
+    github: "",
     get content() {
       return (
         <div>
           <TypographyP className="font-mono ">
-            Android app for Aditya students to access resources, assignments,
-            and college updates in one place.
+            Look Up allows users to scan or upload images to identify objects, text, or landmarks using machine learning. Inspired by Google Lens, it displays visual search results and contextual information.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
         </div>
@@ -321,19 +317,18 @@ const projects: Project[] = [
   },
   {
     id: "cybercafe",
-    category: "Web / Django",
-    title: "Cyber Cafe Management System",
-    src: "/assets/projects/cybercafe-1.png",
-    screenshots: ["cybercafe-1.png", "cybercafe-2.png"],
+    category: "Web + Networking Project",
+    title: "Cyber Café Management System",
+    src: "/assets/projects/cyber_cafe_dashboard.png",
+    screenshots: ["cyber_cafe_dashboard.png"],
     skills: { frontend: [], backend: [] },
     live: "",
-    github: "https://github.com/YOUR_USERNAME/cybercafe",
+    github: "",
     get content() {
       return (
         <div>
           <TypographyP className="font-mono ">
-            Networking-based management system for cyber cafés using Python,
-            Django, HTML, CSS, JavaScript, and MySQL.
+            A full-stack Django-based system that automates client sessions, system usage tracking, and billing in a cyber café. It features admin dashboards, database logging, and LAN-based control.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
         </div>
@@ -341,21 +336,19 @@ const projects: Project[] = [
     },
   },
   {
-    id: "kernel-projects",
-    category: "Android / Kernel",
-    title: "Custom Kernel Projects",
-    src: "/assets/projects/kernel-1.png",
-    screenshots: ["kernel-1.png", "kernel-2.png"],
+    id: "ai-browser",
+    category: "AI Automation / Web App",
+    title: "AI Browser (Qubit Project)",
+    src: "/assets/projects/ai_browser_dashboard.png",
+    screenshots: ["ai_browser_dashboard.png"],
     skills: { frontend: [], backend: [] },
     live: "",
-    github: "https://github.com/YOUR_USERNAME/kernel-projects",
+    github: "",
     get content() {
       return (
         <div>
           <TypographyP className="font-mono ">
-            Built and optimized custom kernels for Samsung Galaxy S20 FE and
-            other Snapdragon devices with performance tuning and battery
-            optimizations.
+            An AI-driven browser that automates web tasks in real time. Users enter natural-language instructions, and the browser performs the requested operations while capturing frame-by-frame screenshots.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
         </div>
@@ -363,21 +356,79 @@ const projects: Project[] = [
     },
   },
   {
-    id: "rom-porting",
-    category: "Android / ROMs",
-    title: "ROM Porting Projects",
-    src: "/assets/projects/rom-1.png",
-    screenshots: ["rom-1.png", "rom-2.png"],
+    id: "sahayak-ai",
+    category: "AI / Education Technology",
+    title: "Sahayak – AI Teaching Assistant (ISRO Hackathon)",
+    src: "/assets/projects/sahayak_ai_ui.png",
+    screenshots: ["sahayak_ai_ui.png"],
     skills: { frontend: [], backend: [] },
     live: "",
-    github: "https://github.com/YOUR_USERNAME/rom-porting",
+    github: "",
     get content() {
       return (
         <div>
           <TypographyP className="font-mono ">
-            Ported custom ROMs like One UI 7, PixelOS, and AOSP-based builds
-            for Samsung and Realme devices. Fixed RIL, WiFi, camera, and
-            kernel-level bugs.
+            An AI assistant designed to support teachers by generating lesson plans, quizzes, and summaries dynamically using Gemini/Vertex AI. Adapts to student learning levels.
+          </TypographyP>
+          <ProjectsLinks live={this.live} repo={this.github} />
+        </div>
+      );
+    },
+  },
+  {
+    id: "oneui7-port",
+    category: "System / ROM Development",
+    title: "Samsung One UI 7 Port (r8q)",
+    src: "/assets/projects/one_ui7_port_r8q.jpg",
+    screenshots: ["one_ui7_port_r8q.jpg"],
+    skills: { frontend: [], backend: [] },
+    live: "",
+    github: "",
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono ">
+            Ported Samsung One UI 7 ROM from Galaxy S20 5G (x1q) to Galaxy S20 FE (r8q). Ongoing fixes for camera, RIL, Wi-Fi, Bluetooth, and sensors using EasyROMMaker.
+          </TypographyP>
+          <ProjectsLinks live={this.live} repo={this.github} />
+        </div>
+      );
+    },
+  },
+  {
+    id: "blazex-kernel",
+    category: "Kernel / System Development",
+    title: "Blazex & Yor_Forger Custom Kernel",
+    src: "/assets/projects/blazex_kernel_logo.png",
+    screenshots: ["blazex_kernel_logo.png"],
+    skills: { frontend: [], backend: [] },
+    live: "",
+    github: "",
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono ">
+            Developed custom kernels from source for Samsung Galaxy S20 FE using Clang 16 on Gitpod. Focused on optimizing performance, reducing power drain, and customizing CPU/GPU governors.
+          </TypographyP>
+          <ProjectsLinks live={this.live} repo={this.github} />
+        </div>
+      );
+    },
+  },
+  {
+    id: "ai-task-automation",
+    category: "AI Automation / Desktop & Web Hybrid",
+    title: "AI Task Automation App (Qubit Extended)",
+    src: "/assets/projects/ai_task_automation_ui.png",
+    screenshots: ["ai_task_automation_ui.png"],
+    skills: { frontend: [], backend: [] },
+    live: "",
+    github: "",
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono ">
+            An enhanced version of the AI Browser that executes real-time automation tasks across system browsers (Chrome, Edge). Ships as cross-platform executables for a seamless user experience.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
         </div>
