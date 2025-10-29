@@ -70,9 +70,22 @@ const Section = ({ title, items }: { title: string; items: SkillItem[] }) => (
   </div>
 );
 
+const Marquee = ({ children }: { children: React.ReactNode }) => (
+  <div className="relative overflow-hidden py-3">
+    <motion.div
+      className="flex gap-6"
+      animate={{ x: [0, -600] }}
+      transition={{ repeat: Infinity, duration: 18, ease: "linear" }}
+    >
+      {children}
+      {children}
+    </motion.div>
+  </div>
+);
+
 const SkillsSection = () => {
   return (
-    <section id="skills" className="w-full min-h-screen md:min-h-[120dvh]">
+    <section id="skills" className="w-full min-h-screen md:min-h-[180dvh]">
       <div className="mb-10">
         <Link href={"#skills"}>
           <BoxReveal width="100%">
@@ -91,6 +104,20 @@ const SkillsSection = () => {
           Animated skills are visible in the hero above. Grid below lists all technologies clearly.
         </p>
         <div className="h-px w-32 mx-auto mt-6 bg-gradient-to-r from-transparent via-neutral-500 to-transparent" />
+        <div className="mt-6">
+          <Marquee>
+            {[<SiReact key="r" />, <SiNextdotjs key="n" />, <SiTailwindcss key="t" />, <SiNodedotjs key="nd" />, <SiExpress key="ex" />, <SiDjango key="dj" />, <SiFlask key="fl" />, <SiMysql key="my" />, <SiPostgresql key="pg" />, <SiMongodb key="mo" />, <SiTensorflow key="tf" />, <SiPytorch key="pt" />, <SiKeras key="ke" />, <SiAndroid key="an" />, <SiFirebase key="fb" />].map(
+              (Icon, i) => (
+                <div
+                  key={i}
+                  className="text-2xl md:text-3xl text-neutral-800 dark:text-neutral-200"
+                >
+                  {Icon}
+                </div>
+              )
+            )}
+          </Marquee>
+        </div>
       </div>
       <div className="container mx-auto px-6">
         <Section
